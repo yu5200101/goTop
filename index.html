@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <style>
+        html,body{
+            height: 1000%;
+            /*CSS3新增加的：背景颜色渐变*/
+            background:-webkit-linear-gradient(top left,
+            lightcoral,lightblue,lightcyan,lightgoldenrodyellow);
+        }
+        .link{
+            display: none;/*开始是隐藏的，当浏览器卷去的高度超过一屏幕高度的时候再让当前这个按钮展示*/
+            position: fixed;
+            right: 20px;
+            bottom:20px;
+            width: 50px;
+            line-height:50px;
+            text-align: center;
+            background: #555;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<a href="javascript:;" id="link" class="link">顶部</a>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/toTop.js"></script>
+</body>
+</html>
